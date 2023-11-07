@@ -10,7 +10,7 @@ public class OrderFieldSetMapper implements FieldSetMapper<Order> {
     public Order mapFieldSet(FieldSet fieldSet) throws BindException {
         Order order = new Order();
         order.setId(fieldSet.readInt("id"));
-        order.setCustId(fieldSet.readInt("cust_id"));
+        order.setUserId(fieldSet.readInt("user_id"));
         order.setTotal(fieldSet.readInt("total"));
         order.setDate(fieldSet.readString("date"));
         order.setStatus(fieldSet.readString("status"));

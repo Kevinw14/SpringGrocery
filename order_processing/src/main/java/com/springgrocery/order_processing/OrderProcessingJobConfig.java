@@ -47,7 +47,7 @@ public class OrderProcessingJobConfig {
      * Orders.csv contains two different formats.
      *  Order:
      *      id: ID of the order.
-     *      cust_id: ID of the customer who placed the order.
+     *      user_id: ID of the customer who placed the order.
      *      total: Total amount of the order in pennies.
      *      status: The current status of the order(pending, processing, shipped, delivered).
      *      date: The date the order was placed.
@@ -105,7 +105,7 @@ public class OrderProcessingJobConfig {
         DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
         lineTokenizer.setNames(
             "id",
-            "cust_id", 
+            "user_id", 
             "total", 
             "status",
             "date",
